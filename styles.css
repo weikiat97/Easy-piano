@@ -1,0 +1,152 @@
+body {
+  text-align: center;
+  background-color: #283149;
+  font-family: "Arvo", cursive;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  text-shadow: 3px 0 #DA0463;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #DBEDF3;
+}
+
+p {
+  font-size: 1rem;
+  color: #DBEDF3;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.nowplaying {
+  font-size: 120px;
+  line-height: 1;
+  color: #eee;
+  text-shadow: 0 0 5rem #028ae9;
+  transition: all .07s ease;
+  min-height: 120px;
+}
+
+.keys {
+  display: block;
+  width: 100%;
+  height: 375px;
+  max-width: 100%;
+  position: relative;
+  margin: 20px auto 0;
+}
+
+.key {
+  position: relative;
+  border: 4px solid black;
+  border-radius: .5rem;
+  transition: all .07s ease;
+  display: block;
+  box-sizing: border-box;
+}
+
+.key:not(.sharp) {
+  float: left;
+  width: 4.7619%;
+  height: 100%;
+  background: rgba(255, 255, 255, .8);    
+}
+
+.key.sharp {
+  position: absolute;
+  width: 3%;
+  height: 60%;
+  background: #000;
+  color: #eee;
+  top: 0;
+  z-index: 3;
+}
+
+#c-3 {
+  left: 3.2%;
+}
+
+#d-3 {
+  left: 8.1%;
+}
+
+#f-3  {
+  left: 17.5%;
+}
+
+#g-3 {
+  left: 22.4%;
+}
+
+#a-3 {
+  left: 27.3%;    
+}
+
+#c-4 {
+  left: 36.7%;    
+}
+
+#d-4 {
+  left: 41.6%;    
+}
+
+#f-4 {
+  left: 50.8%;    
+}
+
+#g-4 {
+  left: 55.7%;    
+}
+
+#a-4 {
+  left: 60.6%;    
+}
+
+#c-5 {
+  left: 70%;    
+}
+
+#d-5 {
+  left: 74.9%;    
+}
+
+#f-5 {
+  left: 84.2%;    
+}
+
+#g-5 {
+  left: 89.1%;    
+}
+
+#a-5 {
+  left: 94%;    
+}
+
+.bpm {
+  color: white;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Easy Piano</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="title">Easy 🎹 Piano</h1>
+  <h2>This simple application is intended for users who are more comfortable with keying in standard music notes on the keyboard to play piano notes.</h2><br>
+  <p>To play notes, use the standard Western music notation.</p>
+  <p>Hold the arrow up to play an octave higher, and the arrow down to play an octave lower.</p>
+  <p>Hold the arrow left to play a note flat, and the arrow right to play a note sharp.</p>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="set">
+          <button class="btn btn-light btn-lg" id="note">Note</button>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 bpm">
+        <label for="customRange">Beats Per Minute</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" onclick="toggleMetronome()">
+          <label class="form-check-label" for="inlineCheckbox1">Play Metronome</label>
+        </div>
+        <div class="d-flex justify-content-center my-4">
+          <div class="w-75">
+            <input type="range" class="custom-range" id="customRange" min="40" max="218" onchange="toggleMetronome()">
+          </div>
+          <span class="font-weight-bold text-primary ml-2 valueSpan"></span>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  
+  <section id="main">
+    <div class="nowplaying"></div>
+    <div class="keys">
+      <div class="key" id="c3" onclick="playNote(this)"></div>
+      <div class="key sharp" id="c-3" onclick="playNote(this)"></div>
+      <div class="key" id="d3" onclick="playNote(this)"></div>
+      <div class="key sharp" id="d-3" onclick="playNote(this)"></div>
+      <div class="key" id="e3" onclick="playNote(this)"></div>
+      <div class="key" id="f3" onclick="playNote(this)"></div>
+      <div class="key sharp" id="f-3" onclick="playNote(this)"></div>
+      <div class="key" id="g3" onclick="playNote(this)"></div>
+      <div class="key sharp" id="g-3" onclick="playNote(this)"></div>
+      <div class="key" id="a3" onclick="playNote(this)"></div>
+      <div class="key sharp" id="a-3" onclick="playNote(this)"></div>
+      <div class="key" id="b3" onclick="playNote(this)"></div>
+      <div class="key" id="c4" onclick="playNote(this)"></div>
+      <div class="key sharp" id="c-4" onclick="playNote(this)"></div>
+      <div class="key" id="d4" onclick="playNote(this)"></div>
+      <div class="key sharp" id="d-4" onclick="playNote(this)"></div>
+      <div class="key" id="e4" onclick="playNote(this)"></div>
+      <div class="key" id="f4" onclick="playNote(this)"></div>
+      <div class="key sharp" id="f-4" onclick="playNote(this)"></div>
+      <div class="key" id="g4" onclick="playNote(this)"></div>
+      <div class="key sharp" id="g-4" onclick="playNote(this)"></div>
+      <div class="key" id="a4" onclick="playNote(this)"></div>
+      <div class="key sharp" id="a-4" onclick="playNote(this)"></div>
+      <div class="key" id="b4" onclick="playNote(this)"></div>
+      <div class="key" id="c5" onclick="playNote(this)"></div>
+      <div class="key sharp" id="c-5" onclick="playNote(this)"></div>
+      <div class="key" id="d5" onclick="playNote(this)"></div>
+      <div class="key sharp" id="d-5" onclick="playNote(this)"></div>
+      <div class="key" id="e5" onclick="playNote(this)"></div>
+      <div class="key" id="f5" onclick="playNote(this)"></div>
+      <div class="key sharp" id="f-5" onclick="playNote(this)"></div>
+      <div class="key" id="g5" onclick="playNote(this)"></div>
+      <div class="key sharp" id="g-5" onclick="playNote(this)"></div>
+      <div class="key" id="a5" onclick="playNote(this)"></div>
+      <div class="key sharp" id="a-5" onclick="playNote(this)"></div>
+      <div class="key" id="b5" onclick="playNote(this)"></div>
+      
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+  <footer>
+  </footer>
+</body>
+
+</html>
